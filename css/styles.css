@@ -633,6 +633,67 @@ img {
   background-color: var(--accent-color);
 }
 
+.footer-form {
+  display: flex;
+
+  margin-left: 93px;
+  color: var(--primary-white-color);
+}
+
+.footer-form-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+
+  min-width: 200px;
+  background-color: var(--accent-color);
+  color: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.footer-form-label {
+  display: block;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-form-input {
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  width: 358px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+  border-radius: 4px;
+  background-color: inherit;
+}
+
+.footer-form-input::placeholder {
+  line-height: 1.25;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-btn-icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
 /* --------Portfolio page-------- */
 
 .radiobutton-list {
