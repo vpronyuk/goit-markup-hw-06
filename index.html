@@ -557,20 +557,21 @@
                 placeholder="Введіть текст"
               />
             </li>
-            <li class="modal-form-item">
-              <input
-                class="modal-form-input"
-                type="checkbox"
-                name="policy"
-                id="policy"
-              />
-              <label class="modal-form-label" for="policy"
-                >Погоджуюся з розсилкою та приймаю
-                <a href="#">Умови договору</a></label
-              >
-            </li>
           </ul>
-          <button class="modal-btn" type="submit">Відправити</button>
+          <div class="modal-policy">
+            <input
+              class="modal-policy-input"
+              type="checkbox"
+              name="policy"
+              id="policy"
+            />
+            <label class="modal-policy-label" for="policy"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="modal-policy-link" href="#">Умови договору</a></label
+            >
+          </div>
+
+          <button class="modal-form-btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
