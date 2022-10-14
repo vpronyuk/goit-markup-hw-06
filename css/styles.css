@@ -558,15 +558,16 @@ img {
   border-radius: 4px;
 }
 
-.modal-comment-field {
+.comment-area > textarea {
   margin-bottom: 20px;
   height: 120px;
+  resize: none;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
-.modal-comment-field::placeholder {
+.comment-area > textarea::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
