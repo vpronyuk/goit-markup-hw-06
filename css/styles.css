@@ -519,6 +519,11 @@ img {
   cursor: pointer;
 }
 
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: var(--accent-color);
+}
+
 .modal-form-title {
   padding-top: 40px;
   padding-left: 40px;
@@ -583,6 +588,11 @@ img {
 
 .modal-policy-link {
   color: var(--accent-color);
+}
+
+.modal-input-icon {
+  right: 15px;
+  bottom: 20px;
 }
 
 .modal-form-btn {
@@ -729,6 +739,7 @@ img {
 
 .footer-form {
   display: flex;
+  align-items: baseline;
   margin-left: 93px;
   color: var(--primary-white-color);
 }
@@ -787,9 +798,10 @@ img {
   fill: currentColor;
 }
 
-/* .footer-form-content {
+.footer-form-content {
   display: flex;
-} */
+  align-items: baseline;
+}
 
 /* --------Portfolio page-------- */
 
