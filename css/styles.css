@@ -482,6 +482,7 @@ img {
 }
 
 .modal {
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -517,6 +518,8 @@ img {
   justify-content: center;
   padding: 0;
   cursor: pointer;
+
+  transition: fill var(--transition-default);
 }
 
 .modal-btn:hover,
@@ -525,17 +528,13 @@ img {
 }
 
 .modal-form {
-  margin: 0 auto;
-  /* padding-left: 40px;
-  padding-right: 40px; */
+  /* margin: 0 auto;
+  
 
-  width: 448px;
+  width: 448px; */
 }
 
 .modal-form-title {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
   width: 100%;
 
   margin-bottom: 12px;
@@ -550,8 +549,6 @@ img {
 
 .modal-form-item {
   position: relative;
-  /* padding-left: 40px;
-  padding-right: 40px; */
 
   display: flex;
   flex-direction: column;
@@ -567,24 +564,33 @@ img {
 }
 
 .modal-form-input {
+  padding-left: 42px;
   margin-bottom: 10px;
   height: 40px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: outline-color var(--transition-default);
 }
 
 .modal-input-icon {
   position: absolute;
-  top: 16px;
-  left: 0;
-  /* top: 50%;
-  bottom: 50%;
-  left: 64px;
-  transform: translate(-50%, -50%); */
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill var(--transition-default);
+}
+
+.modal-form-input:focus + .modal-input-icon {
+  fill: var(--accent-color);
+}
+
+.modal-form-input:focus {
+  outline-color: var(--accent-color);
 }
 
 .comment-area > textarea {
+  padding: 12px 16px;
   margin-bottom: 20px;
   height: 120px;
   resize: none;
@@ -633,6 +639,7 @@ img {
   border-color: transparent;
 
   cursor: pointer;
+  transition: backhround-color var(--transition-default);
 }
 
 .modal-form-btn:hover,
