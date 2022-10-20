@@ -522,7 +522,7 @@
             <use href="./images/index-page-img/icon.svg#icon-close-btn"></use>
           </svg>
         </button>
-        <h2 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
           <div class="modal-form-item">
             <label class="modal-form-label" for="name">Ім'я</label>
@@ -582,10 +582,18 @@
               class="modal-policy-input"
               type="checkbox"
               name="policy"
+              value="true"
               id="policy"
             />
-            <label class="modal-policy-label" for="policy"
-              >Погоджуюся з розсилкою та приймаю
+            <label class="modal-policy-label" for="policy">
+              <span>
+                <svg class="check-icon" width="16" height="15">
+                  <use
+                    href="./images/index-page-img/icon.svg#icon-not-checked"
+                  ></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю
               <a class="modal-policy-link" href="#">Умови договору</a></label
             >
           </div>
