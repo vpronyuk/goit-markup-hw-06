@@ -530,7 +530,6 @@ img {
 .modal-form {
   /* margin: 0 auto;
   
-
   width: 448px; */
 }
 
@@ -570,7 +569,6 @@ img {
 
 .modal-form-input {
   padding-left: 42px;
-  /* margin-bottom: 10px; */
   height: 40px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -580,11 +578,6 @@ img {
 
 .modal-input-icon {
   position: absolute;
-  /* top: 50%;
-  left: 12px;
-
-  transform: translateY(-50%); */
-
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
@@ -627,16 +620,44 @@ img {
   transition: color var(--transition-default);
 }
 
-.modal-policy {
-  /* padding-left: 52px; */
+.modal-policy-input {
 }
 
 .modal-policy-label {
   color: var(--primary-text-color);
+  line-height: 1.71;
+  display: flex;
+  align-items: center;
+}
+
+.modal-policy-label span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-title-color);
+  border-radius: 2px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: fill var(--transition-default);
+  transition: background-color var(--transition-default);
+  transition: border-color var(--transition-default);
 }
 
 .modal-policy-link {
   color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.modal-policy-input:checked + .modal-policy-label span {
+  background-color: var(--accent-color);
+  border-color: transparent;
+  fill: var(--primary-white-color);
+}
+
+.modal-policy-input:focus + .modal-policy-label span {
+  border-color: var(--accent-color);
 }
 
 .modal-form-btn {
@@ -660,7 +681,7 @@ img {
   border-color: transparent;
 
   cursor: pointer;
-  transition: backhround-color var(--transition-default);
+  transition: background-color var(--transition-default);
 }
 
 .modal-form-btn:hover,
@@ -808,6 +829,7 @@ img {
   border-radius: 4px;
   background-color: inherit;
   transition: outline-color var(--accent-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form-input:focus {
